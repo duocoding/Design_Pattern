@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9cf253d1-c34f-4e64-b54b-80587cd3c448" name="Default Changelist" comment="" />
+    <list default="true" id="9cf253d1-c34f-4e64-b54b-80587cd3c448" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer_pattern/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer_pattern/OneObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer_pattern/OneSubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer_pattern/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,18 +40,40 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1dFPUehkRYoKIDvelImVlUvY5Hd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ObserverDemoTest">
+    <configuration name="ObserverDemoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="observer_pattern.ObserverDemoTest" />
+      <module name="Design_Pattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="observer_pattern.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UsingFactory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="factory_pattern.UsingFactory" />
       <module name="Design_Pattern" />
@@ -42,6 +89,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ObserverDemoTest" />
         <item itemvalue="Application.UsingFactory" />
       </list>
     </recent_temporary>
@@ -58,17 +106,34 @@
       <updated>1592017884893</updated>
       <workItem from="1592017888497" duration="3722000" />
       <workItem from="1592355262256" duration="657000" />
+      <workItem from="1593067162970" duration="2562000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1592018413869">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="718" y="154" key="#com.intellij.ide.util.MemberChooser" timestamp="1593072206557">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1592018413869" />
+    <state x="718" y="154" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1593072206557" />
+    <state x="1191" y="330" key="FileChooserDialogImpl" timestamp="1593068007330">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1191" y="330" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1593068007330" />
     <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1592019742888">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -85,9 +150,17 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592019742888" />
+    <state x="912" y="221" width="998" height="708" key="SettingsEditor" timestamp="1593071801373">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="912" y="221" width="998" height="708" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1593071801373" />
     <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1592355303426">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1592355303426" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1593072025768">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593072025768" />
   </component>
 </project>
