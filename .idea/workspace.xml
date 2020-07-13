@@ -20,12 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9cf253d1-c34f-4e64-b54b-80587cd3c448" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/decorator_pattern/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/decorator_pattern/DecoratorPatternDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/decorator_pattern/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/decorator_pattern/RedShapeDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/decorator_pattern/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/decorator_pattern/ShapeDecorator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,13 +70,26 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.DecoratorPatternDemo">
+  <component name="RunManager" selected="Application.DynamicSimpleTest">
     <configuration name="DecoratorPatternDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="decorator_pattern.DecoratorPatternDemo" />
       <module name="Design_Pattern" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="decorator_pattern.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DynamicSimpleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="easy_test.DynamicSimpleTest" />
+      <module name="Design_Pattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="easy_test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,6 +125,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DynamicSimpleTest" />
         <item itemvalue="Application.DecoratorPatternDemo" />
         <item itemvalue="Application.ObserverDemoTest" />
         <item itemvalue="Application.UsingFactory" />
@@ -144,23 +152,25 @@
       <workItem from="1593134424053" duration="1976000" />
       <workItem from="1593263985113" duration="1525000" />
       <workItem from="1593850947884" duration="1760000" />
+      <workItem from="1594628252443" duration="643000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1107" y="450" key="#Custom_Plugin_Repositories" timestamp="1593073689906">
@@ -180,25 +190,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1191" y="330" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1593073263264" />
-    <state width="914" height="273" key="GridCell.Tab.0.bottom" timestamp="1593852394589">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1493" height="202" key="GridCell.Tab.0.bottom" timestamp="1594629035176">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592019742888" />
+    <state width="1493" height="202" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594629035176" />
     <state width="914" height="273" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593852394589" />
-    <state width="914" height="273" key="GridCell.Tab.0.center" timestamp="1593852394589">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1493" height="202" key="GridCell.Tab.0.center" timestamp="1594629035175">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592019742888" />
+    <state width="1493" height="202" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594629035175" />
     <state width="914" height="273" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593852394589" />
-    <state width="914" height="273" key="GridCell.Tab.0.left" timestamp="1593852394588">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1493" height="202" key="GridCell.Tab.0.left" timestamp="1594629035175">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592019742887" />
+    <state width="1493" height="202" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594629035175" />
     <state width="914" height="273" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593852394588" />
-    <state width="914" height="273" key="GridCell.Tab.0.right" timestamp="1593852394589">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1493" height="202" key="GridCell.Tab.0.right" timestamp="1594629035175">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592019742888" />
+    <state width="1493" height="202" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594629035175" />
     <state width="914" height="273" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593852394589" />
     <state x="440" y="184" width="998" height="708" key="SettingsEditor" timestamp="1593166105916">
       <screen x="0" y="0" width="1920" height="1040" />
