@@ -1,4 +1,4 @@
-package PATtest01;
+package Authtest01;
 
 import java.util.Scanner;
 

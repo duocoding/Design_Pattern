@@ -1,4 +1,4 @@
-package easy_test;
+package Authtest01;
 
 import java.util.Scanner;
 
@@ -9,9 +9,9 @@ import java.util.Scanner;
  */
 public class DynamicSimpleTest {
 
-    private static int n;
 
     public static void main(String[] args) {
+        int n;
         Scanner sc = new Scanner(System.in);
         n = sc.nextInt();
         System.out.println(totolStep(n));
