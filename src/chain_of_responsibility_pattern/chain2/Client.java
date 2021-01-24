@@ -9,6 +9,6 @@ package chain_of_responsibility_pattern.chain2;
 public class Client {
     public static void main(String[] args) {
         MemberService memberService = new MemberService();
-        memberService.login("tom","666");
+        memberService.login("","666");
     }
 }

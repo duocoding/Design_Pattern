@@ -8,8 +8,8 @@ package chain_of_responsibility_pattern.chain2;
  */
 public class ValidateHandler extends Handler {
     public void doHandler(Member member) {
-        if ("".equals(member.getLoginName()) ||
-                "".equals(member.getLoginPass())) {
+        if (member.getLoginName().isEmpty() ||
+                member.getLoginPass().isEmpty()) {
             System.out.println("用户名和密码为空");
             return;
         }
