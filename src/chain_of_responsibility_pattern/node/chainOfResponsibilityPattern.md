@@ -80,6 +80,108 @@ ConcreteHandler（具体处理者）：它是抽象处理者的子类，可以�
 ![alt 如下图](https://user-gold-cdn.xitu.io/2018/10/31/166c90b265849954?imageslim)
 
 ### 实现方式
+
+#### 按照当前节点的行为分为两种方式
+常见的责任链流程如下：
+
+![alt 如下图](https://pic3.zhimg.com/80/v2-07b6b9ee4ea60e64cf7acaa31e4f06b6_1440w.jpg)
+##### 1.节点传递方式
+节点传递方式也就是，责任链中当前节点处理完成之后，自己传递给下一个处理节点继续处理。 
+```java
+public interface Handler {
+    default boolean match(String msg) {
+        return true;
+    }
+    void process(String msg);
+}
+
+public abstract class AbstractHandler implements Handler {
+    private Handler next;
+
+    public AbstractHandler setNextHandler(Handler next) {
+        this.next = next;
+        return this;
+    }
+
+    @Override
+    public void process(String msg) {
+        doProcess(msg);
+
+        if (next != null) {
+            next.process(msg);
+        }
+    }
+
+    protected abstract void doProcess(String msg);
+}
+
+// 具体的责任链处理器
+public class Handler1 extends AbstractHandler {
+    @Override
+    public void doProcess(String msg) {
+        System.out.println("[Handler1] process " + msg);
+    }
+}
+public class Handler2 extends AbstractHandler {
+    @Override
+    protected void doProcess(String msg) {
+        System.out.println("[Handler2] process " + msg);
+    }
+}
+public class Handler3 extends AbstractHandler {
+    @Override
+    protected void doProcess(String msg) {
+        System.out.println("[Handler3] process " + msg);
+    }
+}
+```
+![alt 如图所示](https://pic1.zhimg.com/80/v2-3921f765ba862e9ab3cf9dffc33e7f58_1440w.jpg)
+
+##### 2.统一传递方式
+统一传递方式也就是，不由责任链中处理节点传递给下一个节点，而是由统一的传递逻辑进行传递。
+```java
+public class HandlerWrap {
+    private List<Handler> handlerList = new ArrayList<>();
+
+    public HandlerWrap() {
+        handlerList.add(new Handler1());
+        handlerList.add(new Handler2());
+        handlerList.add(new Handler3());
+    }
+
+    public void process(String msg) {
+        for (Handler handler : handlerList) {
+            handler.process(msg);
+        }
+    }
+}
+
+public class Handler1 implements Handler {
+    @Override
+    public void process(String msg) {
+        System.out.println("[Handler1] process " + msg);
+    }
+}
+public class Handler2 implements Handler {
+    @Override
+    public void process(String msg) {
+        System.out.println("[Handler2] process " + msg);
+    }
+}
+public class Handler3 implements Handler {
+    @Override
+    public void process(String msg) {
+        System.out.println("[Handler3] process " + msg);
+    }
+}
+```
+![alt ](https://pic1.zhimg.com/80/v2-e296c97798ff86c893251b6d22ae571c_1440w.jpg)
+##### 两种实现方式比较
+上述两种实现方式差别就是谁来进行下一个节点的传递工作，节点传递方式 是责任链中当前处理节点处理完成之后，自己传递给下一个节点；统一传递方式 是在统一的地方进行传递工作，减轻处理节点的“负担”。
+
+二者本质上是一样的，不过前一种实现方式初始化成本较高，还要注意处理节点的前后顺序，这种调整一个节点的位置时特别要注意前后节点的关系，否则处理链顺序就错乱了。
+##### 抽象出来具体的步骤如下：
+
 1. 声明处理者接口并描述请求处理方法。
 
        确定客户端如何将请求数据传递给方法。 最灵活的方式是将请求转换为对象， 然后将其以参数的形式传递给处理函数。
@@ -104,6 +206,7 @@ ConcreteHandler（具体处理者）：它是抽象处理者的子类，可以�
        1. 链中可能只有单个链接。
        2. 部分请求可能无法到达链尾。
        3. 其他请求可能直到链尾都未被处理。
+       
 ### 纯与不纯的责任链模式
 
 #### 纯的责任链模式：
